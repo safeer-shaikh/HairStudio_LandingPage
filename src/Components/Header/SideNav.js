@@ -18,11 +18,11 @@ export default function SideNav() {
         <div id='sideNav'>
             <nav>
                 <ul>
-                    <li><a href='#'>HOME</a></li>
-                    <li><a href='#'>FEATURES</a></li>
-                    <li><a href='#'>SERVICES</a></li>
-                    <li><a href='#'>TESTIMONIALS</a></li>
-                    <li><a href='#'>MEET US</a></li>
+                    <li><a href='#banner'>HOME</a></li>
+                    <li><a href='#feature'>FEATURES</a></li>
+                    <li><a href='#service'>SERVICES</a></li>
+                    <li><a href='#testimonial'>TESTIMONIALS</a></li>
+                    <li><a href='#footer'>MEET US</a></li>
                 </ul>
             </nav>
         </div>
