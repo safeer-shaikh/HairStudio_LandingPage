@@ -40,7 +40,7 @@
     transition: color 0.5s;
 }
 .banner-btn a span{
-    width: 0;
+    width: 5px;
     height: 100%;
     position: absolute;
     top: 0;
