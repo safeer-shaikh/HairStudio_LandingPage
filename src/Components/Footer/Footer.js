@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import FooterImage from '../../Assets/Images/footer-img.png' 
+import { BrowserRouter as Router, Link } from "react-router-dom";
 export default function Footer() {
     return (
         <>
@@ -28,7 +29,7 @@ export default function Footer() {
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-youtube"></i>
-                    <p>Copyright Safeer Shaikh</p>
+                    <p>Copyright &copy; Safeer Shaikh</p>
                 </div>
             </section>   
         </>

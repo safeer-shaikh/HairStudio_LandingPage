@@ -3,6 +3,7 @@ import './Testimonial.css'
 import user1 from '../../Assets/Images/img-1.jpg';
 import user2 from '../../Assets/Images/img-2.jpg';
 import user3 from '../../Assets/Images/img-3.jpg';
+import { BrowserRouter as Router, Link } from "react-router-dom";
 export default function Testimonial() {
     return (
         <>

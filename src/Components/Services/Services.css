@@ -60,7 +60,7 @@
     cursor: pointer;
     background: linear-gradient(rgba(0,0,0,0.5), #009688);
     opacity: 0;
-    transition: 1s;
+    transition: .5s;
 }
 .single-service:hover .overlay{
     opacity: 1;

@@ -1,32 +1,34 @@
-import React from 'react'
+import  React, { useState } from 'react'
 import BarLogo from '../../Assets/Images/menu.png'
-// import CrossLogo from '../../Assets/Images/close.png'
+import { BrowserRouter as Router } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 export default function SideNav() {
 
-    const openClose=()=>{
-        if(document.getElementById('sideNav').style.right == '-250px'){
-            document.getElementById('sideNav').style.right='0';
-            // document.getElementById('menu').src = {CrossLogo};
+    const [visiblity, setvisiblity] = useState('');
+    const setStyle = () => {
+        if (visiblity == '') {
+            setvisiblity('navSee');
         }else{
-            document.getElementById('sideNav').style.right = '-250px';
-            // document.getElementById('menu').src = {BarLogo};
+            setvisiblity('');
         }
-    }
+    };
 
     return (
         <>
-        <div id='sideNav'>
+        <div id='sideNav' className={visiblity}>
+            <Router>
             <nav>
                 <ul>
-                    <li><a href='#banner'>HOME</a></li>
-                    <li><a href='#feature'>FEATURES</a></li>
-                    <li><a href='#service'>SERVICES</a></li>
-                    <li><a href='#testimonial'>TESTIMONIALS</a></li>
-                    <li><a href='#footer'>MEET US</a></li>
+                    <li><Link to='#banner'><span></span>HOME</Link></li>
+                    <li><Link to='#feature'><span></span>FEATURES</Link></li>
+                    <li><Link to='#service'><span></span>SERVICES</Link></li>
+                    <li><Link to='#testimonial'><span></span>TESTIMONIALS</Link></li>
+                    <li><Link to='#footer'><span></span>MEET US</Link></li>
                 </ul>
             </nav>
+            </Router>
         </div>
-        <div id='menuBtn' onClick={()=>openClose()}>
+        <div id='menuBtn' onClick={()=>setStyle()}>
             <img src={BarLogo} alt='Close Button' id='menu' />
         </div>
         </>

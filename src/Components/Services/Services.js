@@ -4,6 +4,7 @@ import Service1 from '../../Assets/Images/pic-1.jpg';
 import Service2 from '../../Assets/Images/pic-2.jpg';
 import Service3 from '../../Assets/Images/pic-3.jpg';
 import Service4 from '../../Assets/Images/pic-4.jpg';
+import { BrowserRouter as Router, Link } from "react-router-dom";
 export default function Services() {
     return (
         <>

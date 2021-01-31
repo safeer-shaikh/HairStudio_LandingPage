@@ -3,6 +3,9 @@
   padding: 0;
   font-family: 'Poppin-medium', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: Poppin-medium;
   src: url('./Assets/FontFamily/Poppins/Poppins-Medium.ttf');
