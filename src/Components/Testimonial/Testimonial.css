@@ -15,7 +15,7 @@
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
-    box-shadow: 0 10px 20px 3px #00968814;
+    box-shadow: 0 20px 20px 10px #0cfce414;
     cursor: pointer;
     transition: transform .5s ;
 }
@@ -47,5 +47,8 @@
 @media screen and (max-width: 770px){
     .testimonial-col{
         flex-basis: 100%;
+    }
+    .testimonial-col p{
+        text-align: justify;
     }
 }

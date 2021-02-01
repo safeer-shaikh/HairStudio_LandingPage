@@ -29,9 +29,9 @@
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
-.title-text h1{
+/* .title-text h1{
     font-size: 50px;
-}
+} */
 .service-box{
     width: 80%;
     display: flex;
@@ -88,7 +88,7 @@ hr{
     bottom: 40%;
     opacity: 1;
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 767px){
     .single-service{
         flex-basis: 100%;
         margin-bottom: 30px;

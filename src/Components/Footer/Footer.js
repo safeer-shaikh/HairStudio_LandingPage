@@ -1,7 +1,6 @@
 import React from 'react'
 import './Footer.css'
 import FooterImage from '../../Assets/Images/footer-img.png' 
-import { BrowserRouter as Router, Link } from "react-router-dom";
 export default function Footer() {
     return (
         <>

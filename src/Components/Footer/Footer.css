@@ -11,7 +11,7 @@
     flex-wrap: wrap;
 }
 .footer-left, .footer-right{
-    flex-basis: 45%;
+    flex-basis: 50%;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -30,7 +30,7 @@
     margin: 10px;
 }
 .footer-img{
-    max-width: 370px;
+    max-width: 320px;
     opacity: 0.1;
     position: absolute;
     left: 50%;
@@ -60,10 +60,27 @@
     font-size: 12px;
     margin-top: 20px;
 }
-@media screen and (max-width: 770px){
+@media screen and (min-width: 768px){
+    .footer-left, .footer-right{
+        padding: 0px;
+    }
+    .footer-left{
+        flex-basis: 55%;
+    }
+    .footer-right{
+        flex-basis: 45%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
     .footer-left, .footer-right{
         flex-basis: 100%;
-        font-size: 14px;
+        font-size: 11px;
+    }
+    .footer-left h1, .footer-right h1{
+        text-align: center;
+    }
+    .footer-left p, .footer-right p{
+        text-align: center;
     }
     .footer-img{
         top: 25%;
